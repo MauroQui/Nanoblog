@@ -4,7 +4,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { ArticulosService } from '../../services/articulos.service';
-
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [],
@@ -13,6 +14,8 @@ import { ArticulosService } from '../../services/articulos.service';
     MatButtonModule,
     MatCardModule,
     HttpClientModule,
+    MatToolbarModule,
+    MatListModule, // para que me funcione el mat-nav-list
   ],
 
   exports: [
@@ -20,6 +23,8 @@ import { ArticulosService } from '../../services/articulos.service';
     MatButtonModule,
     MatCardModule,
     HttpClientModule,
+    MatToolbarModule,
+    MatListModule,
   ],
 
   // Creamos tambien el provider con su servicio

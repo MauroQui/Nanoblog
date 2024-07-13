@@ -26,7 +26,7 @@ import { MaterialModule } from '../../modules/material/material.module';
   templateUrl: './articulo.component.html',
   styleUrl: './articulo.component.scss'
 })
-export class ArticuloComponent {              // en data:Articulo se pone la interface, osea Articulo
+export class ArticuloComponent {    // en data:Articulo se pone la interface, osea Articulo
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: Articulo,
     public dialogRef: MatDialogRef<ArticuloComponent>

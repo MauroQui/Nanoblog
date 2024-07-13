@@ -1,0 +1,19 @@
+.main-content {
+    display: flex;
+}
+    
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+    
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+   .main-content {
+        flex-direction: column;
+    }
+    
+    app-sidebar {
+        width: 100%;
+    }
+}
